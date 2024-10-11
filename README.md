@@ -40,7 +40,7 @@ cd growthx_project
 ```
 
 ### 2. Set Up the Application Properties
-In the `src/main/resources/application.yml` file, configure the MongoDB connection and OAuth2 properties. Replace the placeholders with your actual MongoDB details and Google OAuth credentials.
+In the `src/main/resources/application.yml` file or `src/main/resources/application.properties`, configure the MongoDB connection and OAuth2 properties. Replace the placeholders with your actual MongoDB details and Google OAuth credentials.
 
 ```yaml
 spring:
@@ -64,7 +64,7 @@ spring:
             user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
 ```
 or  
-```
+```properties
 spring.application.name=GrowthX_Project
 #server.port=8080
 spring.data.mongodb.uri=mongodb://localhost:27017/growthx_assignment_portal
